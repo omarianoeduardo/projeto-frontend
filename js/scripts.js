@@ -69,3 +69,24 @@ buttons.forEach(btn => {
 
 // No carregamento, ajusta botões
 document.addEventListener('DOMContentLoaded', updateButtons);
+
+// PAGINA DE LOGIN
+const form = document.getElementById('loginForm');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  if (!form.checkValidity()) {
+    form.classList.add('was-validated');
+  } else {
+    // Se válido, simula envio ou implementa lógica de autenticação
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    console.log('E-mail:', email);
+    console.log('Senha:', password);
+
+    alert('Formulário enviado com sucesso!');
+  }
+});

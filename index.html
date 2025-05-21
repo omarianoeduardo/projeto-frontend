@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BoraLa! Eventos - Início</title>
-    <link rel="icon" type="icon/jpg" sizes="32x32" href="img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <header class="bg-primary text-white p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1>BoraLa! Eventos</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="events.html">Eventos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="video.html">Vídeo</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="purchase.html">Ingressos</a></li>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>BoraLá! Eventos</title>
+        <link rel="icon" type="icon/jpg" sizes="32x32" href="img/logo.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <header id="header" class="top-bar">
+            <div class="logo">
+                <img src="img/logotipo.png" alt="BoraLá!">
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html">Início</a>
+                <a href="eventossemanal.html">Eventos da semana</a>
+                <a href="meuseventos.html">Meus Eventos</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Login/Cadastro</a>
+              </nav>
+        </header>
+            <h1>Confira os maiores eventos!</h1>
+
+            <section>
+                <div class="galeria">
+                  <p1>Gastronomia</p1>
+                  <p>Melhores culinárias do Brasil e do Mundo!</p>
+                  <div class="slider">
+                    <img src="img/Gastronomia/folk festival.jpg" class="ativa">
+                    <img src="img/Gastronomia/fresh pasta.jpg">
+                    <img src="img/Gastronomia/istockphoto.jpg">
+                  </div>
+                </div>
+            
+                <div class="galeria">
+                  <p1>Show</p1>
+                  <p>Os grandes shows estão aqui!</p>
+                  <div class="slider">
+                    <img src="img/Show/junina.jpg" class="ativa">
+                    <img src="img/Show/monte castelo.jpg">
+                    <img src="img/Show/pagode.jpg">
+                  </div>
+                </div>
+            
+                <div class="galeria">
+                  <p1>Teatro</p1>
+                  <p>Os amantes da cultura brasileira vão amar!</p>
+                  <div class="slider">
+                    <img src="img/Teatro/1.webp" class="ativa">
+                    <img src="img/Teatro/2.jpeg">
+                    <img src="img/Teatro/3.jpeg">
+                  </div>
+                </div>
+              </section>
+
+    <footer>
+            <h4>Siga-nos nas redes sociais:</h4>
+                <ul>
+                    <li><a href="#">LinkerdIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container my-5">
-        <section>
-            <h2>Bem-vindo ao BoraLa! Eventos</h2>
-            <p>Seu portal de eventos oficiais no Brasil.</p>
-            <a href="events.html" class="btn btn-success">Ver Eventos</a>
-        </section>
-    </main>
-
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2025 BoraLa! Eventos. <a href="https://www.boralajoao.com" target="_blank">Site oficial</a></p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+            <p>&copy; <span id="currentYear"></span> BoraLa! Eventos. Todos os direitos reservados.</p>
+        </footer>
+    </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>        
+<script src="js/scripts.js"></script>
