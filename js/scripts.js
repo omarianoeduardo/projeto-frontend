@@ -90,3 +90,45 @@ form.addEventListener('submit', function (event) {
     alert('Formulário enviado com sucesso!');
   }
 });
+
+// Na parte do login //
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.getElementById('loginForm');
+
+  if (loginForm) {
+      loginForm.addEventListener('submit', function (e) {
+          e.preventDefault(); // Impede o envio real do formulário
+
+          // Simula validação bem-sucedida (pode incluir validações aqui)
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+
+          if (email.length >= 6 && password.length >= 6) {
+              // Simula login bem-sucedido
+              alert('Login realizado com sucesso!');
+              window.location.href = 'index.html'; // Redireciona para a tela inicial
+          } else {
+              // Caso os dados estejam incompletos
+              alert('Por favor, preencha os campos corretamente.');
+          }
+      });
+  }
+});
+
+
+// Validação Bootstrap
+(function () {
+  'use strict'
+  const forms = document.querySelectorAll('form')
+
+  Array.from(forms).forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+      }, false)
+  })
+})()
+

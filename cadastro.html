@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cadastro</title>
+    <link rel="icon" type="icon/jpg" sizes="32x32" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header" class="top-bar">
+        <div class="logo">
+            <img src="img/logotipo.png" alt="BoraLá!">
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="eventossemanal.html">Eventos da semana</a>
+            <a href="meuseventos.html">Meus Eventos</a>
+            <a href="contato.html">Compra</a>
+            <a href="login.html">Login/Cadastro</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">Criar Conta</h3>
+                    <form id="registerForm" novalidate>
+                        <div class="mb-3 form-floating">
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome" required minlength="3" />
+                            <label for="nome">Nome completo</label>
+                            <div class="invalid-feedback">Por favor, insira seu nome.</div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="email" class="form-control" id="emailCadastro" placeholder="nome@exemplo.com" required />
+                            <label for="emailCadastro">E-mail</label>
+                            <div class="invalid-feedback">Digite um e-mail válido.</div>
+                        </div>
+                        <div class="mb-3 form-floating">
+                            <input type="password" class="form-control" id="senhaCadastro" placeholder="Senha" required minlength="6"/>
+                            <label for="senhaCadastro">Senha</label>
+                            <div class="invalid-feedback">A senha precisa de pelo menos 6 caracteres.</div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                        </div>
+                    </form>
+                    <hr />
+                    <p class="text-center mb-0">Já tem uma conta? <a href="login.html">Entrar</a></p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Siga-nos nas redes sociais:</h4>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+        <h4>&copy; 2025 BoraLa! Eventos</h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>        
+    <script src="js/scripts.js"></script>
+</body>
+</html>
